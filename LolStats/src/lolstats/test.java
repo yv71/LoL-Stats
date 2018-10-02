@@ -38,6 +38,7 @@ public class test extends javax.swing.JFrame {
     private void initComponents() {
 
         ComboxBoxJoueur = new javax.swing.JComboBox<>();
+        iconJ = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1920, 1080));
@@ -57,16 +58,20 @@ public class test extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(194, 194, 194)
+                .addGap(96, 96, 96)
+                .addComponent(iconJ)
+                .addGap(168, 168, 168)
                 .addComponent(ComboxBoxJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1201, Short.MAX_VALUE))
+                .addContainerGap(1131, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(98, 98, 98)
-                .addComponent(ComboxBoxJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(652, Short.MAX_VALUE))
+                .addGap(95, 95, 95)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(iconJ)
+                    .addComponent(ComboxBoxJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(655, Short.MAX_VALUE))
         );
 
         pack();
@@ -74,7 +79,7 @@ public class test extends javax.swing.JFrame {
 
     private void ComboxBoxJoueurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboxBoxJoueurActionPerformed
         String test =  this.ComboxBoxJoueur.getSelectedItem().toString();
-        System.out.println(test);        // TODO add your handling code here:
+        this.iconJ.setIcon(persos.getPersonnage(test).getSquareIcon());
     }//GEN-LAST:event_ComboxBoxJoueurActionPerformed
 
     /**
@@ -114,6 +119,7 @@ public class test extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> ComboxBoxJoueur;
+    private javax.swing.JLabel iconJ;
     // End of variables declaration//GEN-END:variables
 
 }

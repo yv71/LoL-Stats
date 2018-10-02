@@ -36,18 +36,23 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="194" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+              <Component id="iconJ" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
               <Component id="ComboxBoxJoueur" min="-2" pref="125" max="-2" attributes="0"/>
-              <EmptySpace pref="1201" max="32767" attributes="0"/>
+              <EmptySpace pref="1131" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
-              <Component id="ComboxBoxJoueur" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="652" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="iconJ" min="-2" max="-2" attributes="0"/>
+                  <Component id="ComboxBoxJoueur" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="655" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -68,6 +73,8 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="iconJ">
     </Component>
   </SubComponents>
 </Form>
