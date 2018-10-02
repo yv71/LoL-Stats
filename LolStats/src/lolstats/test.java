@@ -6,7 +6,9 @@
 
 package lolstats;
 
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 /**
  *
@@ -24,7 +26,7 @@ public class test extends javax.swing.JFrame {
                 this.ComboxBoxJoueur.addItem(per.getNom());
             }
         }    
-        
+        this.PanelAccueil.setVisible(false);
     }
     
     
@@ -37,14 +39,37 @@ public class test extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        PanelAccueil = new javax.swing.JPanel();
+        panelNewGame = new javax.swing.JPanel();
         ComboxBoxJoueur = new javax.swing.JComboBox<>();
         iconJ = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
         setPreferredSize(new java.awt.Dimension(1920, 1080));
+        setResizable(false);
         setSize(new java.awt.Dimension(1920, 1080));
+
+        PanelAccueil.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        PanelAccueil.setMaximumSize(new java.awt.Dimension(1920, 1080));
+        PanelAccueil.setMinimumSize(new java.awt.Dimension(1920, 1080));
+        PanelAccueil.setPreferredSize(new java.awt.Dimension(1920, 1080));
+
+        javax.swing.GroupLayout PanelAccueilLayout = new javax.swing.GroupLayout(PanelAccueil);
+        PanelAccueil.setLayout(PanelAccueilLayout);
+        PanelAccueilLayout.setHorizontalGroup(
+            PanelAccueilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1920, Short.MAX_VALUE)
+        );
+        PanelAccueilLayout.setVerticalGroup(
+            PanelAccueilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1080, Short.MAX_VALUE)
+        );
+
+        panelNewGame.setMaximumSize(new java.awt.Dimension(1920, 1080));
+        panelNewGame.setMinimumSize(new java.awt.Dimension(1920, 1080));
 
         ComboxBoxJoueur.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         ComboxBoxJoueur.addActionListener(new java.awt.event.ActionListener() {
@@ -53,25 +78,64 @@ public class test extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelNewGameLayout = new javax.swing.GroupLayout(panelNewGame);
+        panelNewGame.setLayout(panelNewGameLayout);
+        panelNewGameLayout.setHorizontalGroup(
+            panelNewGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelNewGameLayout.createSequentialGroup()
+                .addGroup(panelNewGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelNewGameLayout.createSequentialGroup()
+                        .addGap(109, 109, 109)
+                        .addComponent(iconJ)
+                        .addGap(168, 168, 168)
+                        .addComponent(ComboxBoxJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelNewGameLayout.createSequentialGroup()
+                        .addGap(67, 67, 67)
+                        .addComponent(jButton1)))
+                .addContainerGap(1518, Short.MAX_VALUE))
+        );
+        panelNewGameLayout.setVerticalGroup(
+            panelNewGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelNewGameLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(jButton1)
+                .addGap(47, 47, 47)
+                .addGroup(panelNewGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(iconJ, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ComboxBoxJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(930, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(iconJ)
-                .addGap(168, 168, 168)
-                .addComponent(ComboxBoxJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1131, Short.MAX_VALUE))
+                .addComponent(panelNewGame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(710, 710, 710)
+                    .addComponent(PanelAccueil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(710, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(95, 95, 95)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(iconJ)
-                    .addComponent(ComboxBoxJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(655, Short.MAX_VALUE))
+                .addComponent(panelNewGame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(685, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(342, 342, 342)
+                    .addComponent(PanelAccueil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(343, Short.MAX_VALUE)))
         );
 
         pack();
@@ -81,6 +145,11 @@ public class test extends javax.swing.JFrame {
         String test =  this.ComboxBoxJoueur.getSelectedItem().toString();
         this.iconJ.setIcon(persos.getPersonnage(test).getSquareIcon());
     }//GEN-LAST:event_ComboxBoxJoueurActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.panelNewGame.setVisible(false);
+        this.PanelAccueil.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,7 +188,26 @@ public class test extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> ComboxBoxJoueur;
+    private javax.swing.JPanel PanelAccueil;
     private javax.swing.JLabel iconJ;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JPanel panelNewGame;
     // End of variables declaration//GEN-END:variables
 
+    public Personnages getPersos() {
+        return persos;
+    }
+
+    public JComboBox<String> getComboxBoxJoueur() {
+        return ComboxBoxJoueur;
+    }
+
+    public JLabel getIconJ() {
+        return iconJ;
+    }
+
+    public JPanel getjPanel1() {
+        return panelNewGame;
+    }
+    
 }
