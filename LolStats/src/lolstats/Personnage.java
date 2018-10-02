@@ -19,10 +19,10 @@ public class Personnage {
         this.nom = nom;
         String[] parts = nom.split(" ");
         if (parts.length==1){
-            this.SquareIcon = new ImageIcon(Personnage.class.getResource("SquaresIcons/File_"+ this.nom + "Square.png"));
+            this.SquareIcon = new ImageIcon(Personnage.class.getResource("SquaresIcons/"+ this.nom + "Square.png"));
         }
         else {
-            this.SquareIcon = new ImageIcon(Personnage.class.getResource("SquaresIcons/File_"+ parts[0]+"_"+parts[1]+ "Square.png"));
+            this.SquareIcon = new ImageIcon(Personnage.class.getResource("SquaresIcons/"+ parts[0]+"_"+parts[1]+ "Square.png"));
         }
         
     }

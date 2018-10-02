@@ -6,6 +6,11 @@
 package lolstats;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Spliterator;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 /**
  *
@@ -14,10 +19,20 @@ import java.util.ArrayList;
 public class Personnages {
     
     private ArrayList<Personnage> Personnages;
-
+    
     public Personnages() {
         this.Personnages = new ArrayList<Personnage>();
         this.ajoutePerso();
+    }
+    
+    public Personnage getPersonnage(String nom){
+        Personnage d = null;
+        for(Personnage p : this.Personnages){
+            if (p.getNom() == nom){
+                d = p;
+            }
+        }
+        return d;
     }
     
     public void ajoutePerso(){
@@ -42,7 +57,7 @@ public class Personnages {
         Personnages.add(new Personnage("Corki"));
         Personnages.add(new Personnage("Darius"));
         Personnages.add(new Personnage("Diana"));
-        Personnages.add(new Personnage("Dr.Mundo"));
+        Personnages.add(new Personnage("Dr. Mundo"));
         Personnages.add(new Personnage("Draven"));
         Personnages.add(new Personnage("Ekko"));
         Personnages.add(new Personnage("Elise"));

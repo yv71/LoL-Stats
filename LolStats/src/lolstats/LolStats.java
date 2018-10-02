@@ -18,17 +18,9 @@ public class LolStats {
      */
     public static void main(String[] args) {
         Personnages perso = new Personnages();
-        Personnage t = new Personnage("Renekton");
-        for(Personnage p : perso.getPersonnages()){
-            System.out.println(p);
-            t = p;
-        }
-        
-        AffichageOne test = new AffichageOne();
-        JLabel label = test.getImage();
-        JLabel d = new JLabel(t.getSquareIcon());
-        label = d;
-        test.setVisible(true);
+        Personnage t = new Personnage("Renekton");        
+        test hello = new test (perso);
+        hello.setVisible(true);
     }
     
 }
